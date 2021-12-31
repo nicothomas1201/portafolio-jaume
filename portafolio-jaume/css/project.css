@@ -1,0 +1,50 @@
+.project {
+  padding-block: 40px;
+}
+
+.project-image img {
+  max-inline-size: 100%;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-description p {
+  padding: 0px;
+}
+
+.project-description .button.is-secondary {
+  order: 0;
+}
+.button {
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .project .project-description p {
+    font: var(--body1);
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    padding-block: 80px;
+    gap: 32px;
+  }
+
+  .project-description {
+    flex: 1;
+  }
+
+  .project-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  .project:nth-child(even) .project-image {
+    order: 2;
+  }
+}

@@ -1,0 +1,45 @@
+.description {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description p:first-child {
+  font: 24px/38.83px var(--fontBase);
+  color: var(--purple);
+  padding-block-start: 54px;
+  margin: 0%;
+}
+
+.description p:nth-child(2) {
+  font: var(--headLine5);
+  padding-block-start: 24px;
+  margin: 0%;
+}
+
+.description img {
+  padding-block-start: 40.67px;
+  padding-block-end: 56.67px;
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    margin-block-start: 200px;
+    margin-block-end: 160.11px;
+  }
+
+  .description p:first-child {
+    text-align: center;
+    width: 900px;
+    height: 100px;
+    padding-block: 0;
+    padding-inline: 233px;
+    font: 34px/55px "Oxygen", sans-serif;
+  }
+  .description p:nth-child(2) {
+    padding-inline: 233px;
+  }
+}

@@ -1,0 +1,43 @@
+.testimony {
+  display: flex;
+  text-align: stretch;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(40px);
+  border-left: 2px solid rgba(248, 247, 247, 0.534);
+  border-top: 2px solid rgba(248, 247, 247, 0.534);
+  border-radius: 24px;
+  gap: 24px;
+  margin-block: 40px;
+}
+
+.testimony-img {
+  margin: auto;
+  padding-block-start: 24px;
+  padding-inline: 132px;
+}
+
+.testimony p {
+  font: bold 16px "Oxygen", sans-serif;
+  margin: 0%;
+  padding-inline: 24px;
+}
+
+p:last-of-type {
+  font: 12px/19.42px "Popins", sans-serif;
+  padding-block-end: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimony p {
+    font: var(--headLine4);
+    text-align: center;
+  }
+  .testimony img {
+    text-align: center;
+  }
+
+  .testimony {
+    margin-block: 80px;
+  }
+}
